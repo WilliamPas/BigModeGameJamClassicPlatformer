@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://rs7d1brukmel"]
+
+[ext_resource type="Script" path="res://player/player.gd" id="1_3jigq"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_0scfv"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jau3r"]
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_3jigq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(5.36442e-07, -8.34465e-07)
+scale = Vector2(20, 30)
+texture = SubResource("CanvasTexture_0scfv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_jau3r")

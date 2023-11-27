@@ -1,0 +1,4 @@
+res://Levels/test_level.tscn
+res://player/player.tscn
+res://player/player.gd
+res://main_menu/main_menu.tscn
