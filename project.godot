@@ -12,4 +12,5 @@ config_version=5
 
 config/name="BigModeGameJam"
 config/features=PackedStringArray("4.1", "Forward Plus")
+boot_splash/show_image=false
 config/icon="res://icon.svg"
