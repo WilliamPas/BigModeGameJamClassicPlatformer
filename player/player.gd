@@ -51,6 +51,6 @@ func _physics_process(delta):
 		
 		velocity.x = direction * speed
 	else:
-		velocity.x = move_toward(velocity.x, 0, speed)
+		velocity.x = lerp(velocity.x, 0.0, 0.2)
 
 	move_and_slide()
