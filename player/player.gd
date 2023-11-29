@@ -7,6 +7,8 @@ extends CharacterBody2D
 @export var weight : float = 1400
 @export var hover_coef : float = 2.9
 @export var run_coef : float = 2.0
+@export_range(0.0, 1.0) var acceleration : float = 0.1
+@export_range(0.0, 1.0) var friction : float = 0.15
 var has_double_jumped : bool = false
 var has_hovered : bool = false
 
@@ -46,11 +48,11 @@ func _physics_process(delta):
 
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
+	# Added lerps to add acceleration and drag
 	var direction = Input.get_axis("move_left", "move_right")
-	if direction:
-		
-		velocity.x = direction * speed
+	if direction != 0:
+		velocity.x = lerp(velocity.x, direction * speed, acceleration)
 	else:
-		velocity.x = lerp(velocity.x, 0.0, 0.2)
+		velocity.x = lerp(velocity.x, 0.0, friction)
 
 	move_and_slide()
