@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://ulw4v4w71xdq"]
+
+[ext_resource type="Script" path="res://enemy/enemy.gd" id="1_mci1w"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_5qtcs"]
+size = Vector2(20, 30)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_gkdpw"]
+
+[node name="Enemy" type="CharacterBody2D"]
+script = ExtResource("1_mci1w")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("PlaceholderTexture2D_5qtcs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_gkdpw")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bnaepdlw1uauo"
+path="res://.godot/imported/Super Mario Brothers 1 Music - Main Theme & Overworld [RT3NA5Q08mk].mp3-bad5804cc471052b755377c2ac9de004.mp3str"
+
+[deps]
+
+source_file="res://Super Mario Brothers 1 Music - Main Theme & Overworld [RT3NA5Q08mk].mp3"
+dest_files=["res://.godot/imported/Super Mario Brothers 1 Music - Main Theme & Overworld [RT3NA5Q08mk].mp3-bad5804cc471052b755377c2ac9de004.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
